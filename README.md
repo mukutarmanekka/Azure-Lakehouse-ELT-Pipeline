@@ -1,1 +1,0 @@
-# Azure-Lakehouse-ELT-Pipeline
