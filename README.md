@@ -1,4 +1,4 @@
-# 🛒 Olist E-Commerce Data Engineering Pipeline
+# Olist E-Commerce Data Engineering Pipeline
 
 ### End-to-End Azure Lakehouse — Bronze → Silver → Gold (ELT)
 
@@ -15,7 +15,7 @@ A cloud-native data engineering pipeline built on **Microsoft Azure** that inges
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Architecture](#-architecture)
 - [Tech Stack](#-tech-stack)
@@ -36,7 +36,7 @@ A cloud-native data engineering pipeline built on **Microsoft Azure** that inges
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ![Project Workflow](Diagrams/Project%20Workflow.png)
 
@@ -51,7 +51,7 @@ The pipeline follows five stages — **Ingest → Store (Raw) → Transform & Cl
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Technology | Purpose |
 |---|---|---|
@@ -65,7 +65,7 @@ The pipeline follows five stages — **Ingest → Store (Raw) → Transform & Cl
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 This project uses the **Olist Brazilian E-Commerce** public dataset — real, anonymized order data from the Olist marketplace. The payments file is additionally loaded into **MySQL** and the category-translation file into **MongoDB**, to exercise multi-source ingestion patterns.
 
@@ -96,7 +96,7 @@ This project uses the **Olist Brazilian E-Commerce** public dataset — real, an
 
 ---
 
-## 🔄 Pipeline Walkthrough
+## Pipeline Walkthrough
 
 ### 1. Ingestion Layer — Azure Data Factory
 
@@ -183,7 +183,7 @@ A single ADF pipeline, `End_To_End_Pipeline`, chains the whole flow: **Execute P
 
 ---
 
-## 🗃 Data Model
+## Data Model
 
 ![Star Schema Diagram](Diagrams/Star-Schema-Diagram.png)
 
@@ -231,7 +231,7 @@ Azure-Lakehouse-ELT-Pipeline/
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 **Explore without Azure access.** The `Medallion-Based-Storage-System/` folder already contains a full snapshot of the Bronze CSVs and the Silver/Gold Delta output (Parquet + `_delta_log`), so you can read any table straight away:
 
