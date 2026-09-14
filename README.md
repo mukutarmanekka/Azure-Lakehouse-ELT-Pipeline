@@ -198,7 +198,7 @@ The Gold layer was designed around this **star schema** — a `FACT_ORDERS` tabl
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Azure-Lakehouse-ELT-Pipeline/
@@ -262,7 +262,7 @@ This installs `pandas`, `mysql-connector-python`, `pymongo`, and `ipykernel` —
 
 ---
 
-## 🔐 Configuration & Security Notes
+## Configuration & Security Notes
 
 - The Databricks notebooks authenticate to ADLS Gen2 with an Azure AD app registration (OAuth client credentials), and the ingestion notebooks connect to MySQL/MongoDB with a connection string.
 - **Treat any Application ID, Directory ID, client secret, or database password checked into this repository as sensitive.** In a real deployment these belong in a **Databricks secret scope backed by Azure Key Vault** (`dbutils.secrets.get(...)`) or a Key-Vault-backed ADF linked service — never as literal strings in a notebook cell.
@@ -270,7 +270,7 @@ This installs `pandas`, `mysql-connector-python`, `pymongo`, and `ipykernel` —
 
 ---
 
-## 🚀 Possible Next Steps
+## Possible Next Steps
 
 - Move all credentials to Key Vault-backed secret scopes and parameterize the storage account / app IDs
 - Incremental or CDC-based loading instead of a full overwrite on every run
@@ -281,7 +281,7 @@ This installs `pandas`, `mysql-connector-python`, `pymongo`, and `ipykernel` —
 
 ---
 
-## 👤 Author
+## Author
 
 **Mukut Arman Ekka**
 [github.com/mukutarmanekka](https://github.com/mukutarmanekka)
